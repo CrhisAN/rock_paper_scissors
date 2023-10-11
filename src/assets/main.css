@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+:root {
+  --var-deep-green: #04364a;
+  --var-light-turquoise: #64ccc5;
+  --var-navy-blue: #176b87;
+  --var-pure-white: #dafffb;
+  --var-slate-gray: #2c3333;
+}
+
+/* Deep Green: #04364A Bright Navy Blue: #176B87 Light Turquoise: #64CCC5 Pure White: #DAFFFB */
+/* Verde Profundo: #04364A Azul Marino Brillante: #176B87 Turquesa Claro: #64CCC5 Blanco Inmaculado: #DAFFFB */
+body {
+  font-family: 'Nunito', sans-serif;
+  align-items: center;
+  background: var(--var-deep-green);
+  display: flex;
+  font-size: 15px;
+  margin: 0;
+  min-height: 100vh;
+  padding: 0;
+}
+
+.shadow--gray {
+  box-shadow: 2px 4px 16px var(--var-slate-gray);
+}
+
+.text--shadow {
+  text-shadow: 2px 4px 16px var(--var-slate-gray);
+}
+
+.button {
+  transition: all 0.5s ease;
+  color: var(--var-pure-white);
+  border: 3px solid var(--var-pure-white);
+  border-radius: 8px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 17px;
+  background-color: transparent;
+  padding: 10px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: var(--var-light-turquoise);
+  transform: scale(125%);
+}
